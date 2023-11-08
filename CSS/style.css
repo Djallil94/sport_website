@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.h-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+.h-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+  
+a:hover::after {
+    width: 100%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(225, 110, 28, 0.92);
+}
+
+.sphere {
+    width: 25%;
+    color: white;
+    margin-left: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#accueil{
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/photo-terrain-de-handball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+}
+
+.home-text {
+    font-size: 20px;
+    color: white;
+    margin-left: 60px;
+    width: 80%;
+}
+
+.home-button {
+    width: 200px;
+    height: 50px;
+    margin-left: 60px;
+    background-color: rgba(61, 29, 7, 0.674);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.home-button:hover {
+    background-color: white;
+    border: 2px solid rgba(61, 29, 7, 0.674);
+    color: rgba(61, 29, 7, 0.674);
+}
